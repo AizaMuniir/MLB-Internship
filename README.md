@@ -18,7 +18,5 @@ A Python-based student grading system that takes student details, subjects, and 
 - F: Below 60
 
 ## How to Run
-
 Run the file:
-
 student_grading_system.py
