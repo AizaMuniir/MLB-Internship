@@ -1,0 +1,9 @@
+Explanation of Task 1:
+
+Why does OpenCV read images in BGR instead of RGB?
+
+OpenCV reads images in BGR (Blue, Green, Red) format by default because of historical compatibility with early Windows bitmap (BMP) image formats and the way the original OpenCV library was designed. Many older computer vision applications stored pixel data in BGR order, so OpenCV continued using this convention for consistency.
+
+On the other hand, libraries such as Matplotlib, Pillow (PIL), and most image processing software use the standard RGB (Red, Green, Blue) format. Therefore, when a BGR image is displayed directly using Matplotlib, the red and blue channels are swapped, causing incorrect colors. To display the image correctly, we manually convert BGR to RGB by swapping the first and third channels using NumPy:
+
+rgb = img[:, :, ::-1]
