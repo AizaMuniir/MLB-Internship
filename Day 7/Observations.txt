@@ -1,0 +1,21 @@
+Task 1 - Mean Filter 
+
+-What type of noise does it reduce?
+It reduces random (Gaussian) noise by averaging neighboring pixel values.
+
+-Why does the image become blurry?
+Because every pixel is replaced by the average of its neighbors, sharp edges and fine details are smoothed, making the image appear blurry.
+
+Task 2 - Box Filter
+
+-The Box Filter smooths the image by replacing each pixel with the average of its neighboring pixels.
+
+-It reduces random (Gaussian) noise.
+
+-Since all neighboring pixels are given equal importance, edges and fine details become less sharp, causing the image to look blurrier.
+
+-When the Box Filter is normalized by dividing the sum by 9, its output is the same as the Mean Filter. The main difference is in how the kernel is represented.
+
+Task 3 - Gaussian Filter 
+
+The Gaussian Filter reduces image noise while preserving edges better than the Mean Filter. It gives more importance to the center pixel and less importance to the surrounding pixels, resulting in smoother and more natural blurring. Compared to the Mean Filter, the Gaussian Filter produces a cleaner image with less loss of important details and sharper edges.
